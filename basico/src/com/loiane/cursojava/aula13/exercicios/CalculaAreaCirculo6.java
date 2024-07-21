@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CalculaAreaCirculo6 {
 	
 	public static void main(String[] args) {
-		final double PI = 3.14;
+		final double PI = Math.PI;
 		System.out.println("Digite o Raio do círculo:");
 		Scanner scan = new Scanner(System.in);
 		double r = scan.nextDouble();

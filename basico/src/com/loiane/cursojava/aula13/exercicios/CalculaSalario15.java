@@ -18,6 +18,9 @@ public class CalculaSalario15 {
 		final double salarioLiquido = salarioBruto - (descIR + descINSS + descSindicato);
 		
 		System.out.println("Salário bruto: R$ " + salarioBruto);
+		System.out.println("Valor pago ao Imposto de Renda: R$ " + descIR);
+		System.out.println("Valor pago ao INSS: R$ " + descINSS);
+		System.out.println("Valor pago ao Sindicato: R$ " + descSindicato);
 		System.out.println("Salário líquido (descontando impostos): R$ " + salarioLiquido);
 	}
 
