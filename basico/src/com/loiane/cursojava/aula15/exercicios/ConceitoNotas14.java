@@ -35,10 +35,11 @@ public class ConceitoNotas14 {
 		System.out.println("Média: " + media);
 		System.out.println("Conceito: " + conceito);
 		
-		if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
-			System.out.println("APROVADO!");
-		} else {
-			System.out.println("REPROVADO!");
+		switch (conceito) {
+			case 'A':
+			case 'B':
+			case 'C': System.out.println("APROVADO!"); break;
+			default: System.out.println("REPROVADO!");
 		}
 	}
 

@@ -15,15 +15,20 @@ public class LerNum24 {
 		
 		double result = 0;
 		
-		if (op.equals("+")) {
+		switch (op) {
+		case "+":
 			result = num1 + num2;
-		} else if (op.equals("-")) {
+			break;
+		case "-":
 			result = num1 - num2;
-		} else if (op.equals("*")) {
+			break;
+		case "*":
 			result = num1 * num2;
-		} else if (op.equals("/")) {
+			break;
+		case "/":
 			result = num1 / num2;
-		} else {
+			break;
+		default:
 			System.out.println("Operação inválida!");
 			return;
 		}

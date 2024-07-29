@@ -9,9 +9,9 @@ public class Combustiveis26 {
 		System.out.println("Digite o tipo de combustível de sua escolha [A - Álcool, G - Gasolina]:");
 		final String fuelType = sc.next();
 		String fuel = "";
-		if (fuelType.equals("A") || fuelType.equals("a")) {
+		if (fuelType.equalsIgnoreCase("A")) {
 			fuel = "Álcool";
-		} else if (fuelType.equals("G") || fuelType.equals("g")) {
+		} else if (fuelType.equalsIgnoreCase("G")) {
 			fuel = "Gasolina";
 		} else {
 			System.out.println("Tipo de combustível inválido!");
